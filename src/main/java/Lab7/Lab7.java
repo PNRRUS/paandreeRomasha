@@ -28,4 +28,6 @@ public class Lab7 {
         System.out.println(volvo);
         System.out.println(volvo.push(40));
     }
+
+
 }
