@@ -23,6 +23,11 @@ public int numberOfFamilyMembers;
                 "numberOfBooks = " + numberOfBooks + "\n" +
                 ", isWarAndPeace = " + isWarAndPeace + "\n" +
                 ", numberOfbooksAWeek = " + numberOfbooksAWeek +
+                ", name ='" + name + '\'' +
+                ", adress ='" + adress + '\'' +
+                ", architectorName ='" + architectorName + '\'' +
+                ", culturePlace =" + culturePlace +
+                ", yearOfBuild=" + yearOfBuild +
                 '}';
     }
 

@@ -17,5 +17,15 @@ class Number3DigitsTest {
                assertEquals("YES", digitsMetode(-100, 3), "Test 4 failed");
                assertEquals("NO", digitsMetode(-100, 2), "Test 5 failed");
                assertEquals("YES", digitsMetode(0, 1), "Test 6 failed");
+
+               String a = "Хорошо";
+               String b = "Хорошо";
+               assertEquals(a, b, "не равные строки");
+
+        String expected = "3.1415";
+        String actual = "3";
+
+        assertEquals(expected, actual);
+
     }
 }

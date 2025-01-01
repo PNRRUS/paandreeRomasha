@@ -34,20 +34,22 @@ public class LoginTest {
      * тестовый метод для осуществления аутентификации
      */
     @Test
-    public void loginTest() {
+    public void loginTest() throws InterruptedException {
         //получение доступа к методам класса LoginPage для взаимодействия с элементами страницы
         //значение login/password берутся из файла настроек по аналогии с chromedriver
         //и loginpage
         //вводим логин
         loginPage.inputLogin(ConfProperties.getProperty("login"));
         //нажимаем кнопку входа
-
+        Thread.sleep(2000);
         loginPage.clickLoginBtn();
         //вводим пароль
         loginPage.inputPasswd(ConfProperties.getProperty("password"));
         //нажимаем кнопку входа
+        Thread.sleep(2000);
         loginPage.clickContinueBtn();
         //получаем отображаемый логин
+        Thread.sleep(20000);
         String user = profilePage.getUserName();
         //и сравниваем его с логином из файла настроек
         Assert.assertEquals(ConfProperties.getProperty("login"), user); }

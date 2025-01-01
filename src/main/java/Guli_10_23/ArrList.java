@@ -1,5 +1,6 @@
 package Guli_10_23;
 import java.util.ArrayList;
+import Bildings.*;
 public class ArrList {
 
            public static void main(String[] args) {
@@ -12,6 +13,30 @@ public class ArrList {
             people.add("Sam");
             people.add("Roma");
             people.add("Peter");
+
+               ArrayList diff_objects = new ArrayList();
+               diff_objects.add(1);
+               diff_objects.add("asd");
+               University lomonosova = new University();
+               lomonosova.setFieldIsThereADormNearby(true);
+               lomonosova.setNumbersOfUniversity(2);
+               lomonosova.setWhatStudy("Higher mathematics");
+               lomonosova.setNumberOfStudents(2000);
+               lomonosova.setNumberOfPersonInGroup(20);
+               lomonosova.setNumberOfStudyYears(5);
+               diff_objects.add(lomonosova);
+
+               Library pushinskaya = new Library();
+               pushinskaya.isWarAndPeace = true;
+               pushinskaya.numberOfBooks = 900;
+               pushinskaya.numberOfbooksAWeek = 20;
+               pushinskaya.numberOfFamilyMembers = 15;
+               diff_objects.add(pushinskaya);
+
+               for(Object person : diff_objects){
+                   System.out.println(person);
+               }
+
 
             //people.add(1, "Bob"); // добавляем элемент по индексу 1
 
@@ -71,5 +96,11 @@ int counter = 0;
 
 
         }
+
+    public interface CanFly {
+        boolean canFly();
+
+        void fly();
+    }
     }
 

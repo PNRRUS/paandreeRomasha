@@ -208,7 +208,7 @@ public class SeaBattleUS10 {
 
 //
 
-        Icon imageIcon = new ImageIcon("D:/Downloads/Radar.gif");
+        Icon imageIcon = new ImageIcon("C:/Users/pandreev/IdeaProjects/paandreeRomasha/src/main/java/Guli_10_23/Radar.gif");
         JLabel label = new JLabel(imageIcon);field.getContentPane().add(label);
         label.setBounds(650, 450, 200, 200);
         label.setLocation(650,450);
@@ -221,7 +221,7 @@ public class SeaBattleUS10 {
         field.setSize(999, 742); // размер окна
 
         try {
-            File soundFile = new File("D:/Downloads/sample-12s.wav"); //Звуковой файл
+            File soundFile = new File("C:/Users/pandreev/IdeaProjects/paandreeRomasha/src/main/java/Guli_10_23/intro.wav"); //Звуковой файл
 
             //Получаем AudioInputStream
             //Вот тут могут полететь IOException и UnsupportedAudioFileException

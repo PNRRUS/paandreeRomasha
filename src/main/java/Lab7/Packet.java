@@ -8,9 +8,14 @@ public class Packet implements Pushable{
     }
 
     @Override
-    public boolean push(double v) {
-        boolean pushResult = false;
-        if (v <= VolumeOfPacket ) {pushResult = true;}
-        return pushResult;
+    public String push(double v) {
+        System.out.print("Вставить объем " + v + " л в пакет - ");
+        if (v <= VolumeOfPacket ) {return "возможно";}
+        return "невозможно";
+    }
+
+    @Override
+    public String toString() {
+        return "Объем пакета: " + VolumeOfPacket + " л";
     }
 }

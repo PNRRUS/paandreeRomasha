@@ -15,13 +15,17 @@ public class ProfilePage {
     /**
      * определение локатора меню пользователя
      */
-    @FindBy(xpath = "//*[contains(@class, 'account__name_hasAccentLetter')]")
+    @FindBy(xpath = "//*[@id=\"__next\"]/div/main/div/section[1]/div/div/span/ul/li[2]/bdi")
+    //
+    //*[contains(@class, 'account__name_hasAccentLetter')]
     private WebElement userMenu;
     /**
      * определение локатора кнопки выхода из аккаунта
      */
-    @FindBy(xpath = "//*[contains(@class, 'menu-item_action_exit menu__item menu__item_type_link')]")
+
+    @FindBy(xpath = "//*[@id=\"__next\"]/div/div[1]/header/div/div[2]/button")
     private WebElement logoutBtn;
+
     /**
      * метод для получения имени пользователя из меню пользователя
      */

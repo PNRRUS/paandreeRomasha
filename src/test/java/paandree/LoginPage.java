@@ -35,6 +35,9 @@ public class LoginPage {
     /**
      * метод для ввода логина
      */
+
+
+
     public void inputLogin(String login) {
         loginField.sendKeys(login); }
     /**

@@ -12,10 +12,20 @@ public class Lab7 {
 
     public static void main(String[] args) {
 
-        Pushable bag1 = new Bag(2.5);
-        Pushable packet1 = new Packet(1.2);
+        Bag bag1 = new Bag(2.5);
+        Packet packet1 = new Packet(1.2);
+        Car volvo = new Car(50);
 
-        System.out.println(bag1.push(2));
+
+        System.out.println(bag1);
+        System.out.println(bag1.push(1));
+        System.out.println();
+
+        System.out.println(packet1);
         System.out.println(packet1.push(3));
+        System.out.println();
+
+        System.out.println(volvo);
+        System.out.println(volvo.push(40));
     }
 }

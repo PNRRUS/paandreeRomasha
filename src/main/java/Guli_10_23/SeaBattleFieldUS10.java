@@ -40,7 +40,7 @@ public int[][] arrShotPCBack = new int[10][10];
 
 
                  try {
-                     File soundFile = new File("D:/Downloads/tank.wav"); //Звуковой файл
+                     File soundFile = new File("C:/Users/pandreev/IdeaProjects/paandreeRomasha/src/main/java/Guli_10_23/shot.wav"); //Звуковой файл
 
                      //Получаем AudioInputStream
                      //Вот тут могут полететь IOException и UnsupportedAudioFileException
@@ -81,7 +81,7 @@ public int[][] arrShotPCBack = new int[10][10];
              if (arrShotPC[(y0-40)/40][(x0-540)/40] == 0) {
 
                  try {
-                     File soundFile = new File("D:/Downloads/bulic.wav"); //Звуковой файл
+                     File soundFile = new File("C:/Users/pandreev/IdeaProjects/paandreeRomasha/src/main/java/Guli_10_23/bulk.wav"); //Звуковой файл
 
                      //Получаем AudioInputStream
                      //Вот тут могут полететь IOException и UnsupportedAudioFileException
@@ -121,7 +121,7 @@ public int[][] arrShotPCBack = new int[10][10];
              if (arrShotPC[(y0-40)/40][(x0-540)/40] != 0) {
 
                  try {
-                     File soundFile = new File("D:/Downloads/gjgfk.wav"); //Звуковой файл
+                     File soundFile = new File("C:/Users/pandreev/IdeaProjects/paandreeRomasha/src/main/java/Guli_10_23/bulk1.wav"); //Звуковой файл
 
                      //Получаем AudioInputStream
                      //Вот тут могут полететь IOException и UnsupportedAudioFileException
@@ -176,7 +176,7 @@ public int[][] arrShotPCBack = new int[10][10];
         int counter2 = 0;
 
             try {
-                graphics.drawImage(ImageIO.read(new File("C:/Roma Java/paandree/src/main/java/Guli_10_23/256.jpg")), 0, 0, null);
+                graphics.drawImage(ImageIO.read(new File("C:/Users/pandreev/IdeaProjects/paandreeRomasha/src/main/java/Guli_10_23/256.jpg")), 0, 0, null);
             } catch (IOException a) {
                 throw new RuntimeException(a);
         }

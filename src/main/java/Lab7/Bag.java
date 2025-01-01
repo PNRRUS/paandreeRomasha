@@ -8,9 +8,14 @@ public class Bag implements Pushable{
     }
 
     @Override
-    public boolean push(double v) {
-        boolean pushResult = false;
-        if (v <= VolumeOfBag ) {pushResult = true;}
-        return pushResult;
+    public String push(double v) {
+                System.out.print("Вставить объем " + v + " л в сумку - ");
+        if (v <= VolumeOfBag ) {return "возможно";}
+        return "невозможно";
+    }
+
+    @Override
+    public String toString() {
+        return "Объем сумки: " + VolumeOfBag + " л";
     }
 }
