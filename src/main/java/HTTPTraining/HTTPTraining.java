@@ -40,7 +40,7 @@ public class HTTPTraining {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-             .uri(URI.create("https://petstore.swagger.io/v2/pet/100501"))
+             .uri(URI.create("https://petstore.swagger.io/v2/pet/100503"))
                 .GET()
                 .build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
