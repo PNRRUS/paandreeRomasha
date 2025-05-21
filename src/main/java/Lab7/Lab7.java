@@ -18,6 +18,8 @@ public class Lab7 {
 
 
         System.out.println(bag1);
+        System.out.println(bag1.push(3));
+        System.out.println(bag1.push(5));
         System.out.println(bag1.push(1));
         System.out.println();
 

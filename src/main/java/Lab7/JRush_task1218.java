@@ -1,5 +1,6 @@
 package Lab7;
 
+
 /*
 
  */
@@ -8,8 +9,7 @@ public class JRush_task1218 {
 
         public static void main(String[] args) {
 
-
-        }
+                    }
 
         public interface CanFly {
             public void fly();

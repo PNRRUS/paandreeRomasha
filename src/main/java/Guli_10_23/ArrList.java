@@ -1,9 +1,43 @@
 package Guli_10_23;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import Bildings.*;
 public class ArrList {
 
            public static void main(String[] args) {
+
+               List<Map<String, Object>> listOfMaps = new ArrayList<>();
+
+// Добавление элементов:
+               Map<String, Object> row1 = new HashMap<>();
+               row1.put("id", 1);
+               row1.put("name", "Alice");
+               row1.put("age", 25);
+
+               Map<String, Object> row2 = new HashMap<>();
+               row2.put("id", 2);
+               row2.put("name", "Bob");
+               row2.put("age", 30);
+
+               listOfMaps.add(row1);
+               listOfMaps.add(row2);
+
+               Map<String, Object> firstRow = listOfMaps.get(0);  // Получаем первую "строку"
+               String name = (String) firstRow.get("name");      // "Alice"
+               int age = (int) firstRow.get("age");              // 25
+
+               for (Map<String, Object> row : listOfMaps) {
+                   System.out.println(
+                           "ID: " + row.get("id") +
+                                   ", Name: " + row.get("name") +
+                                   ", Age: " + row.get("age")
+                   );
+               }
+
+
 
             ArrayList<String> people = new ArrayList<String>();
             // добавим в список ряд элементов

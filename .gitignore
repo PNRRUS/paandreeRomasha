@@ -1,0 +1,4 @@
+# Maven
+target/
+# Gradle
+build/git add .
