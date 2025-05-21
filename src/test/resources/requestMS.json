@@ -1,0 +1,18 @@
+{
+  "id": 100503,
+  "category": {
+    "id": 100503,
+    "name": "Molson_Sablino1"
+  },
+  "name": "Molson2",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 100503,
+      "name": "Molson1"
+    }
+  ],
+  "status": "available"
+}
