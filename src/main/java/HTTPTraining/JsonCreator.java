@@ -4,56 +4,64 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import java.util.Arrays;
 import java.util.List;
 
+import lombok.*;
+
 public class JsonCreator {
     public static void main(String[] args) throws Exception {
-        Pet pet = new Pet();
-        pet.setId(100500);
-        pet.setName("Molson");
-        pet.setStatus("available");
-
-        Category category = new Category();
-        category.setId(100500);
-        category.setName("Molson");
-        pet.setCategory(category);
-
-        pet.setPhotoUrls(Arrays.asList("string"));
-
-        Tag tag = new Tag();
-        tag.setId(100500);
-        tag.setName("Molson");
-        pet.setTags(Arrays.asList(tag));
-
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
-        String json = mapper.writeValueAsString(pet);
-        System.out.println(pet.toString());
-        System.out.println(json);
+//        Pet pet = new Pet();
+//        pet.setId(100519);
+//        pet.setName("Molson");
+//        pet.setStatus("available");
+//
+//        Category category = new Category();
+//        category.setId(100520);
+//        category.setName("Dog");
+//        pet.setCategory(category);
+//
+//        pet.setPhotoUrls(Arrays.asList("http://bild1.jpeg", "http://bild2.jpeg"));
+//
+//        Tag tag1 = new Tag();
+//        tag1.setId(100521);
+//        tag1.setName("fluffy");
+//        Tag tag2 = new Tag();
+//        tag2.setId(100522);
+//        tag2.setName("kind");
+//        pet.setTags(Arrays.asList(tag1, tag2));
+//
+//        ObjectMapper mapper = new ObjectMapper();
+//        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+//        String json = mapper.writeValueAsString(pet);
+//        System.out.println(pet.toString());
+//        System.out.println(json);
 
 
     }
 }
+@Getter @Setter
+@AllArgsConstructor @RequiredArgsConstructor
+@Builder
 
 class Pet {
     private int id;
     private Category category;
     private String name;
     private List<String> photoUrls;
-    private List<Tag> tags;
+    private Tag[] tags;  //private List<Tag> tags;
     private String status;
 
     // Геттеры и сеттеры
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-    public Category getCategory() { return category; }
-    public void setCategory(Category category) { this.category = category; }
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public List<String> getPhotoUrls() { return photoUrls; }
-    public void setPhotoUrls(List<String> photoUrls) { this.photoUrls = photoUrls; }
-    public List<Tag> getTags() { return tags; }
-    public void setTags(List<Tag> tags) { this.tags = tags; }
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+//    public int getId() { return id; }
+//    public void setId(int id) { this.id = id; }
+//    public Category getCategory() { return category; }
+//    public void setCategory(Category category) { this.category = category; }
+//    public String getName() { return name; }
+//    public void setName(String name) { this.name = name; }
+//    public List<String> getPhotoUrls() { return photoUrls; }
+//    public void setPhotoUrls(List<String> photoUrls) { this.photoUrls = photoUrls; }
+//    public Tag[] getTags() { return tags; }
+//    public void setTags(Tag[] tags) { this.tags = tags; }
+//    public String getStatus() { return status; }
+//    public void setStatus(String status) { this.status = status; }
 
     @Override
     public String toString() {
@@ -67,16 +75,19 @@ class Pet {
                 '}';
     }
 }
+@Getter @Setter
+@AllArgsConstructor @RequiredArgsConstructor
+@Builder
 
 class Category {
     private int id;
     private String name;
 
     // Геттеры и сеттеры
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+//    public int getId() { return id; }
+//    public void setId(int id) { this.id = id; }
+//    public String getName() { return name; }
+//    public void setName(String name) { this.name = name; }
 
     @Override
     public String toString() {
@@ -86,16 +97,13 @@ class Category {
                 '}';
     }
 }
+@Getter @Setter
+@AllArgsConstructor @RequiredArgsConstructor
+@Builder
 
 class Tag {
     private int id;
     private String name;
-
-    // Геттеры и сеттеры
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
 
     @Override
     public String toString() {

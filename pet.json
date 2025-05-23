@@ -1,0 +1,20 @@
+{
+  "id" : 100519,
+  "category" : {
+    "id" : 100520,
+    "name" : "Dog"
+  },
+  "name" : "Molson",
+  "photoUrls" : [ "http://bild1.jpeg", "http://bild2.jpeg" ],
+  "tags" : [ {
+    "id" : 100524,
+    "name" : "fluffy1"
+  }, {
+    "id" : 100525,
+    "name" : "fluffy2"
+  }, {
+    "id" : 100526,
+    "name" : "fluffy3"
+  } ],
+  "status" : "available"
+}
